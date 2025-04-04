@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Github, Linkedin, Twitter, Mail, Code } from "lucide-react"
+import { Github, Linkedin, Twitter, Mail } from "lucide-react"
 
 export function Footer() {
   return (
@@ -10,30 +10,29 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           <div className="space-y-4">
             <Link href="/" className="font-bold text-xl text-primary flex items-center">
-              <Code className="h-5 w-5 mr-2" />
-              <span>DevAutomation</span>
+              <span>Raihan Firoz</span>
             </Link>
             <p className="text-sm text-muted-foreground">
               Specialized in full-stack development, business process automation, and AI integration.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://github.com" aria-label="GitHub">
+                <Link href="https://github.com/ra89fi" aria-label="GitHub" target="_blank">
                   <Github className="h-5 w-5" />
                 </Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://linkedin.com" aria-label="LinkedIn">
+                <Link href="https://bd.linkedin.com/in/raihanfiroz?trk=people-guest_people_search-card" aria-label="LinkedIn" target="_blank">
                   <Linkedin className="h-5 w-5" />
                 </Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <Link href="https://twitter.com" aria-label="Twitter">
+                <Link href="https://twitter.com/@ra89fi" aria-label="Twitter" target="_blank">
                   <Twitter className="h-5 w-5" />
                 </Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <Link href="mailto:contact@example.com" aria-label="Email">
+                <Link href="mailto:rfiroz.work@gmail.com" aria-label="Email">
                   <Mail className="h-5 w-5" />
                 </Link>
               </Button>
@@ -122,7 +121,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} DevAutomation. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Raihan Firoz. All rights reserved.</p>
         </div>
       </div>
     </footer>

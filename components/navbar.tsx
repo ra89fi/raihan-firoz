@@ -7,7 +7,6 @@ import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
-import { Code } from "lucide-react"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -41,11 +40,10 @@ export function Navbar() {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="/" className="font-bold text-xl text-primary">
+          <Link href="/" className="font-bold text-4xl text-primary">
             <span className="sr-only">Full-Stack Developer</span>
             <span className="flex items-center">
-              <Code className="h-6 w-6 mr-2" />
-              <span>DevAutomation</span>
+              <span>Raihan Firoz</span>
             </span>
           </Link>
 
